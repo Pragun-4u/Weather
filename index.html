@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="search">
+            <input type="text" name="" placeholder="Search a City" id="search-text">
+            <div id="searchbuttoncontainer">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+                    alt="" id="searchbutton">
+            </div>
+        </div>
+        <div class="weather">
+
+            <img src="https://cdn-icons-png.flaticon.com/256/4438/4438915.png" class="weathericon" alt="">
+            <h1 id="temp"><span id="tempnum"></span>°C</h1>
+            <h2 id="city"></h2>
+
+            <div class="details">
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/777/777610.png" class="humidityicon" alt="">
+                    <div>
+                        <p id="humidity"><span id="humiditynum"></span>%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3741/3741046.png" class="windspeedicon" alt="">
+                    <div>
+                        <p id="wind"><span id="windnum"></span> km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="col" id="temper">
+                    <img src="https://icon-library.com/images/sunrise-icon-png/sunrise-icon-png-15.jpg"
+                        class="sunriseimg" alt=""> <br>
+
+                    <div>
+                        <p>
+                        <p class="sunrise" style="color:rgb(250, 205, 4);
+                            text-shadow: 1px 1px 2px black;
+                        ">Sunrise</p>
+                        <span id="sunrisetime"></span> AM
+                        </p>
+                        <p class="sunset">
+                        <p style="color:rgb(246, 117, 47);
+                            text-shadow: 1px 1px 2px black;
+                        ">Sunset</p>
+                        <span id="sunsettime"></span> PM
+                        </p>
+                    </div>
+                </div>
+
+                
+
+            </div>
+            <div>
+                <p id="description"></p>
+            </div>
+           
+        </div>
+
+    </div>
+    <div id="footercontainer">
+        <p>A Weather Project by <span id="name">Pragun Karande</span></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body> 
+<footer>
+    
+</footer>
+
+</html>
